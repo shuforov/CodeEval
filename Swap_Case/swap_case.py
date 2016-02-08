@@ -1,6 +1,6 @@
 #Swap Case https://www.codeeval.com/open_challenges/96/submit/
 
-String_o = raw_input('type_string ')
+my_file = open("text.txt", "r")
 
 def swap_case(String_o):
 	end_str = []
@@ -13,4 +13,5 @@ def swap_case(String_o):
 			end_str.append(l)
 	return "".join(end_str)
 
-print swap_case(String_o)
+print swap_case(my_file.read())
+my_file.close()
