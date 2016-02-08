@@ -1,5 +1,7 @@
 #Swap Case https://www.codeeval.com/open_challenges/96/submit/
 
+String_o = raw_input('type_string ')
+
 def swap_case(String_o):
 	end_str = []
 	for a in String_o:
@@ -11,6 +13,4 @@ def swap_case(String_o):
 			end_str.append(l)
 	return "".join(end_str)
 
-print swap_case("Hello world!")
-print swap_case("JavaScript language 1.8")
-print swap_case("A letter")
+print swap_case(String_o)
